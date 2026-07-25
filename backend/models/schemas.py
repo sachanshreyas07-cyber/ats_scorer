@@ -8,23 +8,23 @@ class ComponentScores(BaseModel):
     skill_validation: float
     ats_compatibility: float
 
-    class JDComparison(BaseModel):
+class JDComparison(BaseModel):
     match_percentage: float
     semantic_similarity: float
     matched_keywords: List[str]
     missing_keywords: List[str]
     skills_gap: List[str]
 
-    class SkillValidationDetails(BaseModel):
-    validated: List[Dict[str, Any]] = []       # [{'skill': str, 'projects': [str]}]
-    unvalidated: List[str] = []                # ['Flask', 'A/B Testing', ...]
+class SkillValidationDetails(BaseModel):
+    validated: List[Dict[str, Any]] = []      
+    unvalidated: List[str] = []                
     total: int = 0
     validated_count: int = 0
     validation_pct: float = 0.0
 
-    class IssueDetail(BaseModel):
+class IssueDetail(BaseModel):
     issue_title: str
-    severity_level: str
+    severity_level: 
     ats_impact: str
     explanation: str
     where_it_appears: str
