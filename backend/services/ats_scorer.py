@@ -6,7 +6,7 @@ from typing import Dict, List, Optional, Tuple
 
 from backend.utils.file_utils import log_warning
 from backend.core.config import SENTENCE_TRANSFORMER_MODEL
-from backend.utils.jd_matcher import fuzzy_match_keywords
+from ats_scorer.backend.utils.matching import fuzzy_match_keywords
 
 ZIP_CODE_PATTERN = r'\b\d{6}\b'
 
