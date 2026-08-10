@@ -16,32 +16,46 @@ from backend.api.routes import router
 logger=logging.getLogger('ats_resume_scorer')
 
 @asynccontextmanager
-async def lifespan(app:FastAPI):
-    logger.info('Starting ATS Resume Analyzer API...')
+async def lifespan(app: FastAPI):
+    print("Start up begin")
 
-    logger.info(f'Loading spaCy NLP model: {SPACY_MODEL_PRIMARY}')
     import spacy
+
     try:
         app.state.nlp = spacy.load(SPACY_MODEL_PRIMARY)
-        logger.info(f'Loaded {SPACY_MODEL_PRIMARY}')
     except OSError:
-        logger.warning(f'{SPACY_MODEL_PRIMARY} not found — falling back to {SPACY_MODEL_SECONDARY}')
         app.state.nlp = spacy.load(SPACY_MODEL_SECONDARY)
-        logger.info(f'Loaded {SPACY_MODEL_SECONDARY} (fallback)')
 
-    logger.info(f'Loading SentenceTransformer: {SENTENCE_TRANSFORMER_MODEL}')
+    print("Before importing SentenceTransformer")
+
+    print("Importing torch...")
+    import torch
+    print("✓ torch")
+
+    print("Importing transformers...")
+    import transformers
+    print("✓ transformers")
+
+    print("Importing sentence_transformers...")
+    import sentence_transformers
+    print("✓ sentence_transformers")
+
+    print("Importing SentenceTransformer...")
     from sentence_transformers import SentenceTransformer
-    app.state.embedder = SentenceTransformer(SENTENCE_TRANSFORMER_MODEL)
-    logger.info(f'Loaded {SENTENCE_TRANSFORMER_MODEL}')
+    print("✓ SentenceTransformer")
 
-    logger.info('All models loaded. API is ready to serve requests.')
+    print("Loading model...")
+    model = SentenceTransformer("ml_model/sbert_resume_matcher")
+    print("✓ Model loaded")
+
+    app.state.embedder = model
 
     yield
 
-    logger.info('shutting down the api!!')
+    logger.info("Shutting down the API")
 
 
-    app=FastAPI(
+app=FastAPI(
     title=APP_TITLE, 
     description=APP_DESCRIPTION, 
     version=APP_VERSION, 
@@ -75,11 +89,12 @@ async def root():
         },
     }
 
-if __name__=='__main__':     //agr uvicorn start hua hota toh file name backend.main hota
+if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(
-        'backend.main:app',
-        host    = '0.0.0.0',
-        port    = 8000,
-        reload  = True,    # Auto-restart on code changes (dev only)
+        "backend.main:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=True,
     )

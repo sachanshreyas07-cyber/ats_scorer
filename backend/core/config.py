@@ -3,7 +3,7 @@ from pathlib import Path
 
 try:
     from dotenv import load_dotenv
-    env_path=Path(__file__).resolve().parents[2] / '.env'          #load_dotenv(find_dotenv())
+    env_path = Path(__file__).resolve().parents[1] / ".env"        #load_dotenv(find_dotenv())
     load_dotenv(env_path)
 except ImportError:
     pass
@@ -28,13 +28,13 @@ SUPPORTED_MIME_TYPES = {
     'application/vnd.openxmlformats-officedocument.wordprocessingml.document': 'docx',
 }
 
-SUPPORTED_EXTENSIONS = {'.pdf', '.doc', '.docx'}     //Mime checking checks filetype whereas this will just help us get extensions checked which dont ensure correct file
+SUPPORTED_EXTENSIONS = {'.pdf', '.doc', '.docx'}     #Mime checking checks filetype whereas this will just help us get extensions checked which dont ensure correct file
 
 SPACY_MODEL_PRIMARY="en_core_web_md" #better accuracy
-SPACY_MODEL_SECONDARY='"en_core_web_sm' 
+SPACY_MODEL_SECONDARY="en_core_web_sm"
 SENTENCE_TRANSFORMER_MODEL = os.getenv(
     "SENTENCE_TRANSFORMER_MODEL",
-    "ml_models/sbert_resume_matcher"
+    "ml_model/sbert_resume_matcher"
 )
 
 SCORE_WEIGHTS = {

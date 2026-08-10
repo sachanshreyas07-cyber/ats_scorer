@@ -24,7 +24,7 @@ class SkillValidationDetails(BaseModel):
 
 class IssueDetail(BaseModel):
     issue_title: str
-    severity_level: 
+    severity_level: str
     ats_impact: str
     explanation: str
     where_it_appears: str
