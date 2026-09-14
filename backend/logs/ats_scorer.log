@@ -23,3 +23,138 @@
 2026-08-07 19:55:09,662 - INFO - Loading SentenceTransformer: ml_model/sbert_resume_matcher
 2026-08-07 20:02:16,569 - INFO - Starting ATS Resume Analyzer API...
 2026-08-07 20:06:18,979 - INFO - Starting ATS Resume Analyzer API...
+2026-09-13 19:02:10,780 - ERROR - Neither SUPABASE_URL (for JWKS) nor SUPABASE_JWT_SECRET configured — cannot verify tokens
+2026-09-13 19:34:44,585 - INFO - Shutting down the API
+2026-09-14 15:34:29,898 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 15:34:30,621 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 15:34:30,621 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 15:34:31,039 - ERROR - Full analysis pipeline failed: No module named 'ats_scorer'
+2026-09-14 15:36:37,367 - INFO - Shutting down the API
+2026-09-14 15:42:47,222 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 15:42:47,691 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 15:42:47,692 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 15:42:48,633 - ERROR - Full analysis pipeline failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-09-14 15:43:11,612 - INFO - Shutting down the API
+2026-09-14 15:45:42,700 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 15:45:43,096 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 15:45:43,096 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 15:45:43,797 - ERROR - Full analysis pipeline failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-09-14 15:46:14,442 - INFO - Shutting down the API
+2026-09-14 15:49:14,152 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 15:49:14,642 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 15:49:14,642 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 15:49:22,082 - INFO - Groq parsed summary: ''
+2026-09-14 15:49:22,082 - INFO - Groq parsed skills count: 41
+2026-09-14 15:49:22,082 - INFO - Groq parsed experience count: 3
+2026-09-14 15:49:26,112 - ERROR - Failed to save analysis to Supabase: Client error '404 Not Found' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-09-14 15:49:38,412 - ERROR - Failed to generate PDF: WeasyPrint is not installed. PDF generation unavailable.
+2026-09-14 15:50:41,540 - ERROR - Failed to generate PDF: WeasyPrint is not installed. PDF generation unavailable.
+2026-09-14 15:51:21,326 - ERROR - Failed to fetch history from Supabase: Client error '404 Not Found' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses?user_id=eq.1bc3585f-edc0-4eab-a89e-4870608d3710&order=created_at.desc'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-09-14 15:51:28,646 - ERROR - Failed to fetch history from Supabase: Client error '404 Not Found' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses?user_id=eq.1bc3585f-edc0-4eab-a89e-4870608d3710&order=created_at.desc'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-09-14 15:51:43,113 - ERROR - Failed to fetch history from Supabase: Client error '404 Not Found' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses?user_id=eq.1bc3585f-edc0-4eab-a89e-4870608d3710&order=created_at.desc'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-09-14 15:52:31,530 - INFO - Shutting down the API
+2026-09-14 16:04:35,552 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 16:04:35,995 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 16:04:35,995 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 16:04:42,694 - INFO - Groq parsed summary: ''
+2026-09-14 16:04:42,694 - INFO - Groq parsed skills count: 19
+2026-09-14 16:04:42,694 - INFO - Groq parsed experience count: 3
+2026-09-14 16:04:46,076 - ERROR - Failed to save analysis to Supabase: Client error '404 Not Found' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-09-14 16:05:43,702 - ERROR - Failed to fetch history from Supabase: Client error '404 Not Found' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses?user_id=eq.1bc3585f-edc0-4eab-a89e-4870608d3710&order=created_at.desc'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-09-14 16:05:44,117 - ERROR - Failed to fetch history from Supabase: Client error '404 Not Found' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses?user_id=eq.1bc3585f-edc0-4eab-a89e-4870608d3710&order=created_at.desc'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-09-14 16:17:04,607 - INFO - parse_Resume_file: parsing file :ats_resume_report.pdf
+2026-09-14 16:17:06,458 - INFO - parse_resume_file: Extracted 5382 chars from ats_resume_report.pdf
+2026-09-14 16:17:06,459 - INFO - Parsed 'ats_resume_report.pdf': 5382 chars extracted
+2026-09-14 16:17:10,586 - INFO - Groq parsed summary: ''
+2026-09-14 16:17:10,586 - INFO - Groq parsed skills count: 19
+2026-09-14 16:17:10,586 - INFO - Groq parsed experience count: 0
+2026-09-14 16:17:11,863 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 16:17:12,042 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 16:17:12,043 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 16:17:17,280 - INFO - Groq parsed summary: ''
+2026-09-14 16:17:17,280 - INFO - Groq parsed skills count: 19
+2026-09-14 16:17:17,280 - INFO - Groq parsed experience count: 3
+2026-09-14 16:17:20,197 - ERROR - Failed to save analysis to Supabase: Client error '401 Unauthorized' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-09-14 16:17:20,203 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 16:17:20,449 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 16:17:20,449 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 16:17:35,323 - INFO - Groq parsed summary: ''
+2026-09-14 16:17:35,323 - INFO - Groq parsed skills count: 19
+2026-09-14 16:17:35,323 - INFO - Groq parsed experience count: 3
+2026-09-14 16:17:37,040 - ERROR - Failed to save analysis to Supabase: 
+2026-09-14 16:17:38,033 - ERROR - Failed to save analysis to Supabase: Client error '401 Unauthorized' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-09-14 17:01:08,687 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 17:01:08,917 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 17:01:08,917 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 17:01:14,990 - INFO - Groq parsed summary: ''
+2026-09-14 17:01:14,990 - INFO - Groq parsed skills count: 19
+2026-09-14 17:01:14,990 - INFO - Groq parsed experience count: 3
+2026-09-14 17:01:16,783 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 17:01:16,958 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 17:01:16,959 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 17:01:22,668 - INFO - Groq parsed summary: ''
+2026-09-14 17:01:22,668 - INFO - Groq parsed skills count: 19
+2026-09-14 17:01:22,668 - INFO - Groq parsed experience count: 3
+2026-09-14 17:01:24,264 - ERROR - Failed to save analysis to Supabase: 
+2026-09-14 17:01:25,760 - ERROR - Failed to save analysis to Supabase: Client error '401 Unauthorized' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-09-14 17:10:38,901 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 17:10:39,357 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 17:10:39,357 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 17:10:45,859 - INFO - Groq parsed summary: ''
+2026-09-14 17:10:45,859 - INFO - Groq parsed skills count: 19
+2026-09-14 17:10:45,859 - INFO - Groq parsed experience count: 3
+2026-09-14 17:10:48,018 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 17:10:48,200 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 17:10:48,200 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 17:10:54,234 - INFO - Groq parsed summary: ''
+2026-09-14 17:10:54,234 - INFO - Groq parsed skills count: 19
+2026-09-14 17:10:54,234 - INFO - Groq parsed experience count: 3
+2026-09-14 17:10:55,846 - ERROR - Failed to save analysis to Supabase: 
+2026-09-14 17:10:56,342 - ERROR - Failed to save analysis to Supabase: Client error '401 Unauthorized' for url 'https://wlqqhpkyqlcyzdoqaewf.supabase.co/rest/v1/analyses'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-09-14 17:13:12,002 - INFO - Shutting down the API
+2026-09-14 17:14:26,628 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 17:14:27,145 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 17:14:27,145 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 17:14:33,898 - INFO - Groq parsed summary: ''
+2026-09-14 17:14:33,898 - INFO - Groq parsed skills count: 19
+2026-09-14 17:14:33,898 - INFO - Groq parsed experience count: 3
+2026-09-14 17:14:36,679 - INFO - Saved analysis for user 1bc3585f-edc0-4eab-a89e-4870608d3710: f9f2c2cc-b0e8-4355-a1e5-f40f59cbd3bb
+2026-09-14 17:18:01,761 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 17:18:01,971 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 17:18:01,971 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 17:18:09,356 - INFO - Groq parsed summary: ''
+2026-09-14 17:18:09,356 - INFO - Groq parsed skills count: 47
+2026-09-14 17:18:09,356 - INFO - Groq parsed experience count: 3
+2026-09-14 17:18:12,536 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 17:18:12,731 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 17:18:12,731 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 17:18:19,282 - INFO - Groq parsed summary: ''
+2026-09-14 17:18:19,282 - INFO - Groq parsed skills count: 19
+2026-09-14 17:18:19,282 - INFO - Groq parsed experience count: 3
+2026-09-14 17:18:21,051 - ERROR - Failed to save analysis to Supabase: 
+2026-09-14 17:18:22,019 - INFO - Saved analysis for user 1bc3585f-edc0-4eab-a89e-4870608d3710: 62e8aa0e-977d-431a-92e5-94721a96740f
+2026-09-14 17:19:33,041 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 17:19:33,248 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 17:19:33,249 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 17:19:39,925 - INFO - Groq parsed summary: ''
+2026-09-14 17:19:39,925 - INFO - Groq parsed skills count: 19
+2026-09-14 17:19:39,925 - INFO - Groq parsed experience count: 3
+2026-09-14 17:19:42,676 - INFO - Saved analysis for user 1bc3585f-edc0-4eab-a89e-4870608d3710: eb65ab12-40b7-471c-a098-1a09cbd4401b
+2026-09-14 17:23:58,793 - INFO - parse_Resume_file: parsing file :Minal_Resume_a.pdf
+2026-09-14 17:23:59,358 - INFO - parse_resume_file: Extracted 4751 chars from Minal_Resume_a.pdf
+2026-09-14 17:23:59,358 - INFO - Parsed 'Minal_Resume_a.pdf': 4751 chars extracted
+2026-09-14 17:24:05,148 - INFO - Groq parsed summary: ''
+2026-09-14 17:24:05,148 - INFO - Groq parsed skills count: 19
+2026-09-14 17:24:05,148 - INFO - Groq parsed experience count: 3
+2026-09-14 17:24:10,355 - INFO - Saved analysis for user 1bc3585f-edc0-4eab-a89e-4870608d3710: c67dac4f-c83f-4284-98d8-f4b4057c7521

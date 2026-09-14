@@ -1,24 +1,33 @@
 import logging
 from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.core.config import(
-    ALLOWED_ORIGINS, 
-    APP_DESCRIPTION, 
-    APP_TITLE, 
-    APP_VERSION, 
-    SPACY_MODEL_PRIMARY, 
-    SPACY_MODEL_SECONDARY, SENTENCE_TRANSFORMER_MODEL
+from sentence_transformers import SentenceTransformer
+
+from backend.core.config import (
+    ALLOWED_ORIGINS,
+    APP_DESCRIPTION,
+    APP_TITLE,
+    APP_VERSION,
+    SPACY_MODEL_PRIMARY,
+    SPACY_MODEL_SECONDARY,
+    SENTENCE_TRANSFORMER_MODEL,
 )
+
 from backend.api.routes import router
 
-logger=logging.getLogger('ats_resume_scorer')
+
+logger = logging.getLogger("ats_resume_scorer")
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+
     print("Start up begin")
 
+    # Load spaCy model
     import spacy
 
     try:
@@ -26,27 +35,14 @@ async def lifespan(app: FastAPI):
     except OSError:
         app.state.nlp = spacy.load(SPACY_MODEL_SECONDARY)
 
-    print("Before importing SentenceTransformer")
+    print("[OK] spaCy model loaded")
 
-    print("Importing torch...")
-    import torch
-    print("✓ torch")
+    # Load fine-tuned SentenceTransformer model
+    print("Loading SentenceTransformer model...")
 
-    print("Importing transformers...")
-    import transformers
-    print("✓ transformers")
+    model = SentenceTransformer(SENTENCE_TRANSFORMER_MODEL)
 
-    print("Importing sentence_transformers...")
-    import sentence_transformers
-    print("✓ sentence_transformers")
-
-    print("Importing SentenceTransformer...")
-    from sentence_transformers import SentenceTransformer
-    print("✓ SentenceTransformer")
-
-    print("Loading model...")
-    model = SentenceTransformer("ml_model/sbert_resume_matcher")
-    print("✓ Model loaded")
+    print("[OK] SentenceTransformer model loaded")
 
     app.state.embedder = model
 
