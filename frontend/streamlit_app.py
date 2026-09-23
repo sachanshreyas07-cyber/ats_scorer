@@ -14,7 +14,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Auth state. Populated by Supabase sign-in / sign-up / OAuth.
+# Auth state. Populated by Supabase sign-in / sign-up.
 # All four are None when signed out, all four are set when signed in.
 for key, default in [
     ("access_token", None),
@@ -26,26 +26,6 @@ for key, default in [
 ]:
     if key not in st.session_state:
         st.session_state[key] = default
-
-# If we just came back from Google OAuth, Supabase appends `?code=<authcode>`
-# to the redirect URL. Exchange it for a session before rendering anything.
-if (
-    not st.session_state.access_token
-    and "code" in st.query_params
-):
-    from frontend.services import supabase_client
-    result = supabase_client.exchange_code_for_session(st.query_params["code"])
-
-    #Always clear the ?code= param so a refresh doesn't try to re-exchange.
-    st.query_params.clear()
-    if "error" in result:
-        st.session_state.auth_error = f"Google sign-in failed: {result['error']}"
-    else:
-        st.session_state.access_token  = result["access_token"]
-        st.session_state.refresh_token = result["refresh_token"]
-        st.session_state.user_id       = result["user_id"]
-        st.session_state.user_email    = result["email"]
-        st.rerun()
 
 #Load custom CSS
 def load_css():
@@ -96,7 +76,7 @@ with st.sidebar:
                 st.session_state[k] = None
             st.rerun()
     else:
-        # Signed-out state: tabs for sign-in vs sign-up + Google OAuth button.
+        # Signed-out state: tabs for sign-in vs sign-up.
         if st.session_state.auth_error:
             st.error(st.session_state.auth_error)
             st.session_state.auth_error = None
@@ -141,19 +121,6 @@ with st.sidebar:
                     st.session_state.user_id       = result["user_id"]
                     st.session_state.user_email    = result["email"]
                 st.rerun()
-
-        st.markdown("<div style='text-align:center; margin: 8px 0; color:#94a3b8;'>or</div>",
-                    unsafe_allow_html=True)
-
-        oauth = supabase_client.google_oauth_url()
-        if "error" in oauth:
-            st.caption(f"Google sign-in unavailable: {oauth['error']}")
-        else:
-            st.link_button(
-                "Continue with Google",
-                url=oauth["url"],
-                use_container_width=True,
-            )
 
 # Main content area - render based on current view
 if st.session_state.current_view == 'landing':

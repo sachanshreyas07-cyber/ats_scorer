@@ -216,3 +216,53 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-09-19 21:46:09,551 - INFO - Groq parsed skills count: 41
 2026-09-19 21:46:09,551 - INFO - Groq parsed experience count: 1
 2026-09-19 21:46:17,720 - INFO - Saved analysis for user 1bc3585f-edc0-4eab-a89e-4870608d3710: b51e6587-28ff-45b1-9d11-be2ff4447015
+2026-09-19 22:27:18,406 - INFO - parse_Resume_file: parsing file :shreyas resume.pdf
+2026-09-19 22:27:18,509 - INFO - parse_resume_file: Extracted 2729 chars from shreyas resume.pdf
+2026-09-19 22:27:18,509 - INFO - Parsed 'shreyas resume.pdf': 2729 chars extracted
+2026-09-19 22:27:24,605 - INFO - Groq parsed summary: ''
+2026-09-19 22:27:24,605 - INFO - Groq parsed skills count: 41
+2026-09-19 22:27:24,605 - INFO - Groq parsed experience count: 1
+2026-09-19 22:27:31,054 - INFO - Saved analysis for user 1bc3585f-edc0-4eab-a89e-4870608d3710: 668fdf1c-de54-4456-9a3c-dd98316bcd85
+2026-09-19 22:31:38,536 - ERROR - Failed to fetch history from Supabase: 
+2026-09-20 09:41:27,335 - INFO - parse_Resume_file: parsing file :Siddharth_Shukla.pdf
+2026-09-20 09:41:27,566 - INFO - parse_resume_file: Extracted 4938 chars from Siddharth_Shukla.pdf
+2026-09-20 09:41:27,567 - INFO - Parsed 'Siddharth_Shukla.pdf': 4938 chars extracted
+2026-09-20 09:41:33,790 - INFO - Groq parsed summary: ''
+2026-09-20 09:41:33,790 - INFO - Groq parsed skills count: 36
+2026-09-20 09:41:33,790 - INFO - Groq parsed experience count: 2
+2026-09-20 09:41:40,270 - INFO - Saved analysis for user 1bc3585f-edc0-4eab-a89e-4870608d3710: b041c3c4-6251-479e-9c82-1d293cea601f
+2026-09-20 09:42:06,221 - INFO - parse_Resume_file: parsing file :Siddharth_Shukla.pdf
+2026-09-20 09:42:06,457 - INFO - parse_resume_file: Extracted 4938 chars from Siddharth_Shukla.pdf
+2026-09-20 09:42:06,457 - INFO - Parsed 'Siddharth_Shukla.pdf': 4938 chars extracted
+2026-09-20 09:42:11,716 - INFO - Groq parsed summary: ''
+2026-09-20 09:42:11,717 - INFO - Groq parsed skills count: 36
+2026-09-20 09:42:11,717 - INFO - Groq parsed experience count: 2
+2026-09-20 09:42:17,742 - INFO - Saved analysis for user 1bc3585f-edc0-4eab-a89e-4870608d3710: efb87fed-65a0-41a3-9002-3291777a934d
+2026-09-20 09:53:11,725 - INFO - parse_Resume_file: parsing file :shreyas resume.pdf
+2026-09-20 09:53:11,850 - INFO - parse_resume_file: Extracted 2729 chars from shreyas resume.pdf
+2026-09-20 09:53:11,850 - INFO - Parsed 'shreyas resume.pdf': 2729 chars extracted
+2026-09-20 09:53:17,303 - INFO - Groq parsed summary: ''
+2026-09-20 09:53:17,303 - INFO - Groq parsed skills count: 41
+2026-09-20 09:53:17,303 - INFO - Groq parsed experience count: 1
+2026-09-20 09:53:22,414 - INFO - parse_Resume_file: parsing file :shreyas resume.pdf
+2026-09-20 09:53:22,514 - INFO - parse_resume_file: Extracted 2729 chars from shreyas resume.pdf
+2026-09-20 09:53:22,514 - INFO - Parsed 'shreyas resume.pdf': 2729 chars extracted
+2026-09-20 09:53:27,475 - INFO - Groq parsed summary: ''
+2026-09-20 09:53:27,475 - INFO - Groq parsed skills count: 44
+2026-09-20 09:53:27,475 - INFO - Groq parsed experience count: 1
+2026-09-20 09:53:30,923 - ERROR - Failed to save analysis to Supabase: 
+2026-09-20 09:53:32,098 - INFO - Saved analysis for user 22fee3ae-de88-4efe-be67-32e3fe8c710c: f8129dd2-0787-41e5-bae0-c030279cbedf
+2026-09-20 10:32:52,459 - INFO - parse_Resume_file: parsing file :Siddharth_Shukla.pdf
+2026-09-20 10:32:52,712 - INFO - parse_resume_file: Extracted 4938 chars from Siddharth_Shukla.pdf
+2026-09-20 10:32:52,712 - INFO - Parsed 'Siddharth_Shukla.pdf': 4938 chars extracted
+2026-09-20 10:32:59,929 - INFO - Groq parsed summary: ''
+2026-09-20 10:32:59,930 - INFO - Groq parsed skills count: 35
+2026-09-20 10:32:59,930 - INFO - Groq parsed experience count: 2
+2026-09-20 10:33:07,297 - INFO - Saved analysis for user 65c1efd6-85c7-4029-ad22-3dcc46c3ffb1: 74a2c0c5-5158-43fb-a4d1-b9878a938cd2
+2026-09-21 16:22:22,610 - INFO - parse_Resume_file: parsing file :Naman_Srivastava_Optimized_Resume.pdf
+2026-09-21 16:22:22,746 - INFO - parse_resume_file: Extracted 3081 chars from Naman_Srivastava_Optimized_Resume.pdf
+2026-09-21 16:22:22,746 - INFO - Parsed 'Naman_Srivastava_Optimized_Resume.pdf': 3081 chars extracted
+2026-09-21 16:22:29,593 - INFO - Groq parsed summary: 'Business Strategy and Analytics professional with 3+ years of experience at Axis Bank Corporate Offi'
+2026-09-21 16:22:29,594 - INFO - Groq parsed skills count: 19
+2026-09-21 16:22:29,594 - INFO - Groq parsed experience count: 3
+2026-09-21 16:22:35,709 - INFO - Saved analysis for user 1bc3585f-edc0-4eab-a89e-4870608d3710: e6359791-e64e-4749-a19c-2ae598281262
