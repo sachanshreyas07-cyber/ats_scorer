@@ -25,4 +25,4 @@ RUN python -m spacy download en_core_web_md
 COPY . .
 
 # Railway provides $PORT
-CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT}"]
+CMD uvicorn backend.main:app --host 0.0.0.0 --port ${PORT}
