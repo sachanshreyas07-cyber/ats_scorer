@@ -1,5 +1,40 @@
-streamlit
-supabase
+# ================================
+# ATS Resume Scorer
+# Backend + Frontend Dependencies
+# ================================
+
+# ---------- Backend ----------
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
 python-dotenv
+
+# ---------- NLP / ML ----------
+spacy
+sentence-transformers
+rapidfuzz
+numpy
+scikit-learn
+
+# ---------- Resume Parsing ----------
+PyPDF2
+pdfplumber
+python-docx
+python-magic
+
+# ---------- PDF Report Generation ----------
+jinja2
+weasyprint
+
+# ---------- AI / External Services ----------
+groq
 httpx
+
+# ---------- Supabase ----------
+supabase
+PyJWT[crypto]
+
+# ---------- Frontend ----------
+streamlit
 requests
