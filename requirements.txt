@@ -11,7 +11,7 @@ python-multipart
 python-dotenv
 
 # ---------- NLP / ML ----------
-spacy>=3.8,<3.9
+spacy
 sentence-transformers
 rapidfuzz
 numpy
@@ -30,6 +30,8 @@ weasyprint
 # ---------- AI / External Services ----------
 groq
 httpx
+
+# ---------- Supabase ----------
 supabase
 PyJWT[crypto]
 
